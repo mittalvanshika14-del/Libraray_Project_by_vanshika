@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanshika Mittal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+  <div class="popup-box">
+    <h2>Welcome 👋</h2>
+    <p>
+      Thank you for visiting my portfolio.<br>
+      Backend Intern | Python | SQL
+    </p>
+    <button onclick="closePopup()">Enter</button>
+  </div>
+</div>
+
+<!-- ENTRY SCREEN -->
+<div class="entry-screen" id="entryScreen">
+  <h1 class="entry-text">Welcome to My Portfolio</h1>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main-content">
+
+<header class="navbar">
+  <div class="container nav-flex">
+    <h2 class="logo"><span class="typing-name"></span></h2>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container center">
+    <h1>Hi, I'm Vanshika 👋</h1>
+    <p class="typing"></p>
+
+    <!-- STATUS -->
+    <p class="status">
+      BCA Student | Actively seeking Internship Opportunities
+    </p>
+
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container center">
+    <h1>About Me</h1>
+
+    <p class="about-text">
+      I am a BCA student focused on backend development using Python and SQL.
+      I enjoy solving real-world problems and building structured systems.
+    </p>
+
+    <div class="about-box">
+      <h3>Core Strengths</h3>
+      <ul>
+        <li>✔️ Problem Solving</li>
+        <li>✔️ Critical Thinking</li>
+        <li>✔️ Communication</li>
+        <li>✔️ Team Work</li>
+        <li>✔️ Time Management</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container center">
+    <h1>Tech Stack</h1>
+
+    <div class="skills-grid">
+      <div>Python</div>
+      <div>SQL</div>
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>Communication</div>
+    </div>
+
+    <!-- SKILL BAR -->
+    <div class="skill-bar">
+      <p>Python</p>
+      <div class="bar"><div class="fill" style="width:80%"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container center">
+    <h1>My Projects</h1>
+
+    <div class="project-grid">
+
+      <!-- ATM -->
+      <div class="card">
+        <h2>ATM System</h2>
+        <p>Python-based ATM simulation with authentication & transactions.</p>
+
+        <ul class="project-features">
+          <li>✔ Secure login system</li>
+          <li>✔ Withdrawal & balance check</li>
+          <li>✔ Input validation</li>
+        </ul>
+
+        <a href="#" class="btn-small" onclick="openProject('atm')">View Project</a>
+      </div>
+
+      <!-- LIBRARY -->
+      <div class="card">
+        <h2>Library Management</h2>
+        <p>SQL-based system for managing books and users.</p>
+
+        <ul class="project-features">
+          <li>✔ Book issue/return system</li>
+          <li>✔ User records management</li>
+          <li>✔ Database queries</li>
+        </ul>
+
+        <a href="#" class="btn-small" onclick="openProject('library')">View Project</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container center">
+    <h1>Get In Touch</h1>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>mittalvanshika14@gmail.com</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <p>+91 8448799270</p> 
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+
+<!-- FULL SCREEN PROJECT VIEW -->
+<div class="full-project" id="fullProject">
+
+  <div class="project-header">
+    <h1 id="projectTitle"></h1>
+    <span class="close-btn" onclick="closeProject()">✕</span>
+  </div>
+
+  <div class="project-body" id="projectBody"></div>
+
+</div>
+</body>
+</html>
